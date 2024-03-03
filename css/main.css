@@ -1,0 +1,56 @@
+.wrapper-print-stamp {
+  width: 69mm;
+  height: 15mm;
+  display: flex;
+  align-items: center;
+  position: relative;
+  padding: 2mm 0;
+  .logo {
+    width: 13mm;
+    height: 13mm;
+  }
+
+  .print-stamp-title {
+    text-align: center;
+    min-width: 19mm;
+    line-height: 2.5mm;
+    font-size: 2mm;
+  }
+
+  .qrcode {
+    margin-top: 1mm;
+    width: 9mm;
+    height: 9mm;
+    margin-left: 3mm;
+    margin-right: 2mm;
+  }
+
+  .print-stamp-address {
+    line-height: 1.75mm;
+    .print-stamp-address__title {
+      font-size: 2mm;
+    }
+  }
+}
+
+.wrapper-print-stamp::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1mm;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: linear-gradient(90deg, var(--light-border-color-from) 0%, var(--light-border-color-to) 100%);
+}
+
+.wrapper-print-stamp::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1mm;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: linear-gradient(90deg, var(--dark-border-color-from) 0%, var(--dark-border-color-to) 100%);
+}
