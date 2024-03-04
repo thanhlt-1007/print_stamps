@@ -1,0 +1,21 @@
+:root {
+  --text-color: #424146;
+  --light-border-color-from: #019587;
+  --light-border-color-to: #20BBB5;
+  --dark-border-color-from: #1E6067;
+  --dark-border-color-to: #146576;
+}
+
+* {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--text-color);
+  font-size: 1.25mm;
+}
+
+.text-bold {
+  font-weight: 700;
+}
