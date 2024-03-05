@@ -17,6 +17,10 @@
     font-size: 2mm;
   }
 
+  .print-stamp-code {
+    font-size: 2.25mm;
+  }
+
   .qrcode {
     margin-top: 1mm;
     width: 9mm;
