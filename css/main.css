@@ -1,4 +1,4 @@
-.wrapper-print-stamp {
+.wrapper-print-stamp-day {
   width: 69mm;
   height: 15mm;
   display: inline-flex;
@@ -53,7 +53,7 @@
   }
 }
 
-.wrapper-print-stamp::before {
+.wrapper-print-stamp-day::before {
   content: "";
   display: block;
   width: 100%;
@@ -64,7 +64,7 @@
   background: linear-gradient(90deg, var(--light-border-color-from) 0%, var(--light-border-color-to) 100%);
 }
 
-.wrapper-print-stamp::after {
+.wrapper-print-stamp-day::after {
   content: "";
   display: block;
   width: 100%;
@@ -73,4 +73,99 @@
   left: 0;
   bottom: 0;
   background: linear-gradient(90deg, var(--dark-border-color-from) 0%, var(--dark-border-color-to) 100%);
+}
+
+.wrapper-print-stamp-vi {
+  display: inline-flex;
+  align-items: center;
+
+  .print-stamp-vi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-weight: 700;
+    border: 0.05mm solid #000;
+    .print-stamp-title {
+      margin: 0;
+      text-align: center;
+    }
+
+    .print-stamp-code {
+      margin: 0;
+      margin-top: 0.5mm;
+      text-align: center;
+    }
+
+    .print-stamp-body {
+      margin-top: 1.5mm;
+      margin-left: 2mm;
+
+      .print-stamp-body__title {
+        display: inline-block;
+        width: 9mm;
+      }
+
+      .print-stamp-body__title--not-in-line {
+        width: 6.5mm;
+      }
+    }
+  }
+
+  .print-stamp-vi--diamond-large {
+    width: 32mm;
+    height: 32mm;
+
+    .print-stamp-title {
+      font-size: 2.8mm;
+    }
+
+    .print-stamp-code {
+      font-size: 2.4mm;
+    }
+
+    .print-stamp-body {
+      font-size: 2.3mm;
+      line-height: 3.2mm;
+    }
+  }
+  .print-stamp-vi--diamond-small {
+    width: 30mm;
+    height: 30mm;
+
+    .print-stamp-title {
+      font-size: 2.6mm;
+    }
+
+    .print-stamp-code {
+      font-size: 2.2mm;
+    }
+
+    .print-stamp-body {
+      font-size: 2.1mm;
+      line-height: 3mm;
+    }
+  }
+
+  .qrcode-vi {
+    border: 0.05mm solid #000;
+    margin-left: 2mm;
+  }
+
+  .qrcode-vi--diamond-large {
+    width: 15mm;
+    height: 15mm;
+  }
+
+  .qrcode-vi--diamond-small {
+    width: 12mm;
+    height: 12mm;
+  }
+}
+
+.wrapper-print-stamp-vi + .wrapper-print-stamp-vi {
+  margin-left: 8px;
+}
+
+.wrapper-print-stamp-day + .wrapper-print-stamp-vi {
+  margin-left: 8px;
 }
