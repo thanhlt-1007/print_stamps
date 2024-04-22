@@ -169,3 +169,11 @@
 .wrapper-print-stamp-day + .wrapper-print-stamp-vi {
   margin-left: 8px;
 }
+
+.print-stamp-body-d-inline-flex {
+  display: inline-flex
+}
+
+.m-0 {
+  margin: 0px;
+}
