@@ -53,7 +53,52 @@
   }
 }
 
-.wrapper-print-stamp-day::before {
+.wrapper-print-stamp-boc {
+  /* width tem day */
+  /* width: 69mm; */
+  width: 44mm;
+  height: 15mm;
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  padding: 2mm 0;
+  .logo {
+    margin-top: 1mm;
+    margin-bottom: 1mm;
+    margin-left: 1mm;
+    width: 10mm;
+    height: 11mm;
+  }
+
+  .print-stamp-title {
+    text-align: center;
+    /* min-width, max-width tem boc */
+    /* min-width: 22mm;
+    max-width: 22mm; */
+
+    min-width: 21mm;
+    max-width: 21mm;
+    line-height: 2.5mm;
+    font-size: 2mm;
+    font-weight: bolder;
+  }
+
+  .print-stamp-code {
+    font-size: 2mm;
+    margin-top: -1mm;
+    font-weight: bolder;
+  }
+
+  .qrcode {
+    margin-top: 1mm;
+    width: 11mm;
+    height: 11mm;
+    /* margin-left: 2mm; */
+    /* margin-right: 1mm; */
+  }
+}
+
+.wrapper-print-stamp--have-border-color::before {
   content: "";
   display: block;
   width: 100%;
@@ -64,7 +109,7 @@
   background: linear-gradient(90deg, var(--light-border-color-from) 0%, var(--light-border-color-to) 100%);
 }
 
-.wrapper-print-stamp-day::after {
+.wrapper-print-stamp--have-border-color::after {
   content: "";
   display: block;
   width: 100%;
